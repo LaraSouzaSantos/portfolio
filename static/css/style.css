@@ -295,11 +295,38 @@ body {
   align-items: center;
   justify-content: center;
 }
-.featured-image{position:relative}
-.cover-placeholder{
-  width:320px;height:200px;border-radius:10px;background:linear-gradient(135deg,#a78bfa,#7c3aed);display:flex;align-items:center;justify-content:center;color:var(--accent-contrast);font-weight:700;border:2px solid rgba(255,255,255,0.06);position:relative;z-index:1
+.featured-image {
+  position: relative;
 }
-.cover-img{width:320px;height:200px;object-fit:contain;object-position:top center;border-radius:10px;display:block;position:relative;z-index:2;background:linear-gradient(180deg,rgba(10,10,15,0.2),rgba(10,10,15,0.4))}
+.cover-placeholder {
+  width: 320px;
+  height: 200px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-contrast);
+  font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  z-index: 1;
+}
+.cover-img {
+  width: 320px;
+  height: 200px;
+  object-fit: contain;
+  object-position: top center;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 15, 0.2),
+    rgba(10, 10, 15, 0.4)
+  );
+}
 
 /* Colorful accents for cards */
 .card[data-accent="teal"] .card-image {
@@ -320,21 +347,87 @@ body {
 }
 
 /* Timeline (cursos / formações) */
-.timeline{position:relative;margin-top:18px;padding-left:28px}
-.timeline::before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,rgba(124,58,237,0.18),rgba(124,58,237,0.06))}
-.timeline-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
-.timeline-marker{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--accent-contrast);flex-shrink:0;border:2px solid rgba(255,255,255,0.04)}
-.timeline-body h3{margin:0 0 6px;font-size:18px;color:var(--text)}
-.timeline-institution{font-weight:600;color:var(--muted);font-size:15px}
-.timeline-meta{display:inline-block;background:rgba(255,255,255,0.04);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:13px;margin:6px 0}
-.timeline-body p{margin:0;color:var(--muted)}
+.timeline {
+  position: relative;
+  margin-top: 18px;
+  padding-left: 28px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(124, 58, 237, 0.18),
+    rgba(124, 58, 237, 0.06)
+  );
+}
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.02);
+}
+.timeline-marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--accent-contrast);
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.04);
+}
+.timeline-body h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: var(--text);
+}
+.timeline-institution {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 15px;
+}
+.timeline-meta {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin: 6px 0;
+}
+.timeline-body p {
+  margin: 0;
+  color: var(--muted);
+}
 
-.group-title{color:var(--accent);text-transform:uppercase;font-weight:700;margin:18px 0 8px;font-size:14px;letter-spacing:0.06em}
+.group-title {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 18px 0 8px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
 
-@media (max-width:900px){
-  .timeline{padding-left:0}
-  .timeline::before{display:none}
-  .timeline-item{flex-direction:row;align-items:flex-start}
+@media (max-width: 900px) {
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline::before {
+    display: none;
+  }
+  .timeline-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 /* Contact */
@@ -365,9 +458,21 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .projects-grid {
+  .hero-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 26px;
+  }
+  .lead {
+    font-size: 13px;
+  }
+
+  /* Nav mobile: toggle visible, nav becomes overlay */
   .nav-toggle {
     display: block;
   }
@@ -376,18 +481,94 @@ body {
   }
   .site-nav.open {
     display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 64px;
-    background: transparent;
-    padding: 12px 20px;
+    position: fixed;
+    inset: 64px 10px 10px 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 15, 0.98),
+      rgba(10, 10, 15, 0.99)
+    );
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 40;
   }
   .site-nav ul {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
+  .site-nav a {
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  /* Buttons full width on mobile */
+  .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .btn + .btn {
+    margin-top: 8px;
+  }
+  .btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Profile circle smaller and centered */
   .photo-placeholder {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  /* Featured: stack content vertically */
+  .featured {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .featured-image {
+    order: 2;
+    margin-top: 10px;
+  }
+  .featured-content {
+    order: 1;
+  }
+  .cover-img {
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+  }
+
+  /* Timeline: adapt spacing and remove left line */
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline::before {
+    display: none;
+  }
+  .timeline-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 0;
+  }
+  .timeline-marker {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .timeline-body h3 {
+    font-size: 15px;
+  }
+
+  /* Cards / grid fallback */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
