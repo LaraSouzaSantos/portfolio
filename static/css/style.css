@@ -85,6 +85,20 @@ body {
   color: var(--muted);
   text-decoration: none;
 }
+/* Melhor contraste e legibilidade do menu mobile */
+.site-nav.open {
+  background: linear-gradient(
+    180deg,
+    rgba(11, 8, 25, 0.98),
+    rgba(18, 10, 40, 0.995)
+  );
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+.site-nav.open a {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 16px;
+}
 .site-nav a:hover {
   color: var(--text);
 }
