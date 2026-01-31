@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Larissa Cristina</title>
+    <meta
+      name="description"
+      content="Portfólio de Larissa Cristina — Designer / Web Design / UI/UX"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Larissa Cristina</a>
+        <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#trabalhos">Trabalhos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1>Larissa Cristina</h1>
+            <p class="lead">Designer • Web Design • UI/UX</p>
+            <p>
+              Crio experiências digitais centradas no usuário com foco em
+              estética, acessibilidade e usabilidade.
+            </p>
+            <p>
+              <a href="#trabalhos" class="btn">Ver trabalhos</a>
+              <a href="#contato" class="btn btn-outline">Contato</a>
+            </p>
+          </div>
+
+          <div class="photo-placeholder" aria-hidden="false">
+            <img
+              src="static/img/foto.jpg"
+              alt="Foto de Larissa Cristina"
+              class="profile-photo"
+              onerror="
+                this.onerror = null;
+                this.src = 'static/img/foto.jpg';
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section container">
+        <h2>Sobre</h2>
+        <p>
+          Meu nome é Larissa Cristina de Souza Santos. Sou designer com foco em
+          Web Design e UI/UX. Trabalho com pesquisa de usuário, prototipagem,
+          design visual e implementação front-end leve.
+        </p>
+      </section>
+
+      <section id="trabalhos" class="section container">
+        <h2>Trabalhos</h2>
+
+        <div class="featured">
+          <div class="featured-content">
+            <h3>Landing Page — Projeto de Livros</h3>
+            <p class="featured-lead">
+              Landing page em andamento para uma plataforma de livros — foco em
+              navegação, catálogo e conversão. Trabalho: layout responsivo,
+              hierarchy visual e microinterações.
+            </p>
+            <ul class="badges">
+              <li>UI</li>
+              <li>UX</li>
+              <li>Web Design</li>
+            </ul>
+            <p>
+              <a href="#" class="btn">Ver case</a>
+              <a href="#contato" class="btn btn-outline">Falar comigo</a>
+              <a
+                href="https://www.figma.com/design/ALsBLaJOvuucMOY6Euy5M3/REFER%C3%8ANCIAS?node-id=231-3&t=bHnLoOBO6nZVcszS-1"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener"
+                >Abrir no Figma</a
+              >
+            </p>
+          </div>
+
+          <div class="featured-image" aria-hidden="true">
+            <img
+              src="static/img/landing_page.png"
+              alt="Landing page mockup"
+              class="cover-img"
+              onload="this.nextElementSibling.style.display = 'none'"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="cover-placeholder">Capa — Landing Page</div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">🎓</div>
+            <div class="timeline-body">
+              <h3>
+                Graduação em Marketing
+                <span class="timeline-institution">— Estácio</span>
+              </h3>
+              <p class="timeline-meta">Concluído</p>
+              <p>
+                Formação sólida em estratégias de mercado, comunicação e
+                branding aplicados a produtos digitais.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">💻</div>
+            <div class="timeline-body">
+              <h3>
+                Curso de Web Design
+                <span class="timeline-institution">— Origamid</span>
+              </h3>
+              <p class="timeline-meta">Em andamento</p>
+              <p>
+                Foco em HTML/CSS modernos, layout responsivo e boas práticas de
+                front-end para designers.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">📚</div>
+            <div class="timeline-body">
+              <h3>
+                Web Designer UI/UX
+                <span class="timeline-institution">— SENAI</span>
+              </h3>
+              <p class="timeline-meta">Em andamento</p>
+              <p>
+                Aprimoramento em pesquisa com usuários, prototipagem, fluxo de
+                interação e testes de usabilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section container contact">
+        <h2>Contato</h2>
+        <p>
+          E-mail:
+          <a href="mailto:lara28502souz@gmail.com">lara28502souz@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/larissa-cristina-a80b61345"
+            target="_blank"
+            rel="noopener"
+            >https://www.linkedin.com/in/larissa-cristina-a80b61345</a
+          >
+        </p>
+        <p>
+          Figma:
+          <a
+            href="https://www.figma.com/design/ALsBLaJOvuucMOY6Euy5M3/REFER%C3%8ANCIAS?node-id=231-3&t=bHnLoOBO6nZVcszS-1"
+            target="_blank"
+            rel="noopener"
+            >Abrir projeto no Figma</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Larissa Cristina — Designer / Web Design •
+          UI/UX
+        </p>
+      </div>
+    </footer>
+
+    <script src="static/js/scripts.js"></script>
+  </body>
+</html>
