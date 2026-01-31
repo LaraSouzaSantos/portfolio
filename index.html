@@ -18,17 +18,29 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#">Larissa Cristina</a>
-        <button class="nav-toggle" aria-label="Abrir menu">☰</button>
         <nav class="site-nav">
-          <ul>
+          <ul class="desktop-menu">
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#trabalhos">Trabalhos</a></li>
+            <li><a href="#trabalhos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
+          <div
+            class="nav-card"
+            role="dialog"
+            aria-modal="true"
+            aria-hidden="true"
+          >
+            <button class="nav-close" aria-label="Fechar menu">✕</button>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#trabalhos">Trabalhos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
- <!-- atualização -->
+    <!-- atualização -->
     <main>
       <section class="hero">
         <div class="container hero-grid">
@@ -62,14 +74,303 @@
       <section id="sobre" class="section container">
         <h2>Sobre</h2>
         <p>
-          Meu nome é Larissa Cristina de Souza Santos. Sou designer com foco em
-          Web Design e UI/UX. Trabalho com pesquisa de usuário, prototipagem,
-          design visual e implementação front-end leve.
+          Meu nome é Larissa Cristina de Souza Santos. Sou designer com foco em Web Design e UI/UX, com formação em Marketing e atuação no desenvolvimento de interfaces digitais centradas no usuário. Trabalho com pesquisa de usuário, prototipagem e design visual, aliando estética, usabilidade e objetivos de negócio. Também realizo implementação front-end básica utilizando HTML e CSS para garantir fidelidade entre o design e o produto final.
         </p>
       </section>
 
+      <section id="habilidades" class="section container">
+        <h2>Habilidades</h2>
+        <p>Ferramentas e competências que uso com frequência:</p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Figma (stacked circles/pills, colored) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect
+                    x="6.5"
+                    y="2"
+                    width="5"
+                    height="5"
+                    rx="2.5"
+                    fill="#F24E1E"
+                  />
+                  <rect
+                    x="6.5"
+                    y="8.5"
+                    width="5"
+                    height="5"
+                    rx="2.5"
+                    fill="#A259FF"
+                  />
+                  <rect
+                    x="12.5"
+                    y="8.5"
+                    width="5"
+                    height="5"
+                    rx="2.5"
+                    fill="#FF7262"
+                  />
+                  <rect
+                    x="6.5"
+                    y="15"
+                    width="5"
+                    height="5"
+                    rx="2.5"
+                    fill="#0ACF83"
+                  />
+                  <rect
+                    x="12.5"
+                    y="15"
+                    width="5"
+                    height="5"
+                    rx="2.5"
+                    fill="#0096FF"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="skill-name">Figma</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- HTML5 shield (simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="#E34F26" d="M4 2l1.6 18.1L12 22l6.4-1.9L20 2H4z" />
+                <path
+                  fill="#FFF"
+                  d="M7.5 8.8h9.1l-.4 4.6-4.3 1.2-4.4-1.2-.4-4.6z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- CSS3 shield (simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="#1572B6" d="M4 2l1.6 18.1L12 22l6.4-1.9L20 2H4z" />
+                <path
+                  fill="#33A9DC"
+                  d="M7.5 8.8h9.1l-.4 4.6-4.3 1.2-4.4-1.2-.4-4.6z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">CSS</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Illustrator (Ai-like mark simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="3"
+                  fill="#FF9A00"
+                />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="10"
+                  fill="#fff"
+                >
+                  Ai
+                </text>
+              </svg>
+            </div>
+            <div class="skill-name">Illustrator</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Canva (C mark simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="10" fill="#00C4CC" />
+                <path
+                  d="M15 8.5c-1.2-1.2-3-1-4.2-.5-1.3.6-2 2-2 3.6 0 3 1.7 4.9 4.7 4.9 2.1 0 3.8-1 4.4-2.3l-1.6-1c-.4.9-1.5 1.5-2.8 1.5-1.3 0-2.1-.7-2.4-1.8h6.5v-1.4c0-1.6-.8-3-2.6-4z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">Canva</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Adobe Express (spark simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#FF0000"
+                  d="M12 2l1.9 4.9L19 9l-4.9 1.9L12 16l-1.1-5.1L6 9l4.1-2.1L12 2z"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">Adobe Express</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- CorelDRAW (balloon-like shape simplified) -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="10" r="6" fill="#00AEEF" />
+                <path
+                  d="M8 18c1 1.5 3 2.5 4 2.5s3-1 4-2.5"
+                  stroke="#003A6D"
+                  stroke-width="1"
+                  fill="none"
+                />
+              </svg>
+            </div>
+            <div class="skill-name">CorelDRAW</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Photoshop (Ps) simplified -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="3"
+                  fill="#31A8FF"
+                />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="10"
+                  fill="#012A4A"
+                >
+                  Ps
+                </text>
+              </svg>
+            </div>
+            <div class="skill-name">Photoshop</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Sketch (diamond) simplified -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="12,2 20,9 12,22 4,9" fill="#F7B500" />
+              </svg>
+            </div>
+            <div class="skill-name">Sketch</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- Adobe XD (Xd) simplified -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="3"
+                  fill="#FF61F6"
+                />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="10"
+                  fill="#600047"
+                >
+                  Xd
+                </text>
+              </svg>
+            </div>
+            <div class="skill-name">Adobe XD</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <!-- After Effects (Ae) simplified -->
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="3"
+                  fill="#9999FF"
+                />
+                <text
+                  x="12"
+                  y="16"
+                  text-anchor="middle"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="10"
+                  fill="#1A1A2E"
+                >
+                  Ae
+                </text>
+              </svg>
+            </div>
+            <div class="skill-name">After Effects</div>
+          </div>
+        </div>
+      </section>
+
       <section id="trabalhos" class="section container">
-        <h2>Trabalhos</h2>
+        <h2>Projetos</h2>
 
         <div class="featured">
           <div class="featured-content">
@@ -194,5 +495,35 @@
     </footer>
 
     <script src="static/js/scripts.js"></script>
+    <!-- Bottom mobile nav: moderno, 3 opções com ícones -->
+    <nav class="bottom-nav" aria-label="Navegação secundária">
+      <a class="bn-item" href="#sobre">
+        <span class="bn-icon">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z"
+            />
+          </svg>
+        </span>
+        <span class="bn-label">Sobre</span>
+      </a>
+      <a class="bn-item" href="#trabalhos">
+        <span class="bn-icon">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7h18v2H3zM3 11h18v2H3zM3 15h18v2H3z" />
+          </svg>
+        </span>
+        <span class="bn-label">Trabalhos</span>
+      </a>
+      <a class="bn-item" href="#contato">
+        <span class="bn-icon">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M2 4h20v16H2z" fill="none" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+        </span>
+        <span class="bn-label">Contato</span>
+      </a>
+    </nav>
   </body>
 </html>
